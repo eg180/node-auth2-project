@@ -1,0 +1,37 @@
+{
+  "name": "node-auth2-project",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eg180/node-auth2-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eg180/node-auth2-project/issues"
+  },
+  "homepage": "https://github.com/eg180/node-auth2-project#readme",
+  "dependencies": {
+    "connect-session-knex": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.13",
+    "pg": "^8.5.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "nodemon": "^2.0.6"
+  }
+}
