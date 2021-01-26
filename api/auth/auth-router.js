@@ -8,9 +8,10 @@ const { isValid } = require("../users/users-service.js");
 
 router.post("/register", (req, res) => {
   const credentials = req.body;
+  console.log(credentials)
 
   if (isValid(credentials)) {
-    const rounds = process.env.BCRYPT_ROUNDS || 8;
+    const rounds = 8;
 
     // hash the password
     const hash = bcryptjs.hashSync(credentials.password, rounds);
@@ -74,7 +75,7 @@ function makeToken(user) {
     role: user.role,
   }
   const options = {
-    expiresIn: '900s',
+    expiresIn: '60',
   }
   return jwt.sign(payload, jwtSecret, options)
 }
